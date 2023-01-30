@@ -2,6 +2,7 @@
 This repo. is an official implementation of the *CoMask*, which  has been submitted to the journal *Nature Machine Intelligence, 2023*.
 
 Example
+
 ![quantitative results](output/CoMask/E1.5.png)
 
 ## Installation
@@ -33,7 +34,7 @@ python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [--out ${RESULT_FILE}] [-
 ./tools/dist_test.sh ${CONFIG_FILE} ${CHECKPOINT_FILE} ${GPU_NUM} [--out ${RESULT_FILE}] [--eval ${EVAL_METRICS}]
 ```
 
-- CONFIG_FILE about D2Det is in [configs/D2Det](configs/D2Det), please refer to [GETTING_STARTED.md](docs/GETTING_STARTED.md) for more details.
+- CONFIG_FILE about CoMask is in [configs/CoMask](configs/CoMask), please refer to [GETTING_STARTED.md](docs/GETTING_STARTED.md) for more details.
 
 ## Train and Inference on microscopy images
 ./tools/dist_train.sh configs/CoMask/CoMask_r50_mfpn_2x.py 4 --load_from='./checkpoints/coco_epoch_24.pth'
