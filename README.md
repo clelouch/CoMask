@@ -39,10 +39,14 @@ python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [--out ${RESULT_FILE}] [-
 ## Train and Inference on microscopy images
 
 #####  Train with a single GPU
+```shell
 ./tools/dist_train.sh configs/CoMask/CoMask_r50_mfpn_2x.py 4 --load_from='./checkpoints/coco_epoch_24.pth'
+```
 
 #### Inference
+```shell
 python output.py
+```
 
 ## Annotation of Data
 For the annotation of segmentation we recommend the use of the labelme, that can be found here: https://github.com/wkentaro/labelme.
