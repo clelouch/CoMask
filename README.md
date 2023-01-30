@@ -37,7 +37,12 @@ python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE} [--out ${RESULT_FILE}] [-
 - CONFIG_FILE about CoMask is in [configs/CoMask](configs/CoMask), please refer to [GETTING_STARTED.md](docs/GETTING_STARTED.md) for more details.
 
 ## Train and Inference on microscopy images
+
+#####  Train with a single GPU
 ./tools/dist_train.sh configs/CoMask/CoMask_r50_mfpn_2x.py 4 --load_from='./checkpoints/coco_epoch_24.pth'
+
+#### Inference
+python output.py
 
 ## Annotation of Data
 For the annotation of segmentation we recommend the use of the labelme, that can be found here: https://github.com/wkentaro/labelme.
